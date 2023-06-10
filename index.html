@@ -10,31 +10,31 @@
 <body>
     <!--<img src="objetosdeplastico-removebg.png" alt="">-->
     <!-- itens de plástico -->
-    <div id="sacola" draggable="true" class="itemPlastico"></div>
-    <div id="copo" draggable="true" class="itemPlastico"></div>
-    <div id="garrafaPlastico" draggable="true" class="itemPlastico"></div>
+    <div id="sacola" draggable="true" class="itemPlastico itens"></div>
+    <div id="copo" draggable="true" class="itemPlastico itens"></div>
+    <div id="garrafaPlastico" draggable="true" class="itemPlastico itens"></div>
     <!-- itens de papel -->
-    <div id="jornal" draggable="true" class="itemPapel"></div>
-    <div id="caixaPapelao" draggable="true" class="itemPapel"></div>
-    <div id="sacolaPapel" draggable="true" class="itemPapel"></div>
+    <div id="jornal" draggable="true" class="itemPapel itens"></div>
+    <div id="caixaPapelao" draggable="true" class="itemPapel itens"></div>
+    <div id="sacolaPapel" draggable="true" class="itemPapel itens"></div>
     <!-- itens de vidro -->
-    <div id="espelho" draggable="true" class="itemVidro"></div>
-    <div id="garrafaVidro" draggable="true" class="itemVidro"></div>
-    <div id="taca" draggable="true" class="itemVidro"></div>
+    <div id="espelho" draggable="true" class="itemVidro itens"></div>
+    <div id="garrafaVidro" draggable="true" class="itemVidro itens"></div>
+    <div id="taca" draggable="true" class="itemVidro itens"></div>
     <!-- itens orgânicos -->
-    <div id="maca" draggable="true" class="itemOrganico"></div>
-    <div id="banana" draggable="true" class="itemOrganico"></div>
-    <div id="peixe" draggable="true" class="itemOrganico"></div>
+    <div id="maca" draggable="true" class="itemOrganico itens"></div>
+    <div id="banana" draggable="true" class="itemOrganico itens"></div>
+    <div id="peixe" draggable="true" class="itemOrganico itens"></div>
     <!-- itens metálicos -->
-    <div id="latinha" draggable="true" class="itemMetalico"></div>
-    <div id="talher" draggable="true" class="itemMetalico"></div>
-    <div id="panela" draggable="true" class="itemMetalico"></div>
+    <div id="latinha" draggable="true" class="itemMetalico itens"></div>
+    <div id="talher" draggable="true" class="itemMetalico itens"></div>
+    <div id="panela" draggable="true" class="itemMetalico itens"></div>
 
-    <div id="contagemPlastico">ok123</div>
-    <div id="contagemPapel">ok123</div>
-    <div id="contagemVidro">ok123</div>
-    <div id="contagemOrganico">ok123</div>
-    <div id="contagemMetal">ok123</div>
+    <div id="contagemPlastico"></div>
+    <div id="contagemPapel"></div>
+    <div id="contagemVidro"></div>
+    <div id="contagemOrganico"></div>
+    <div id="contagemMetal"></div>
     <div id="caixa">
         <div id="lixeiraPlastico"></div>
         <div id="lixeiraPapel"></div>
@@ -42,6 +42,15 @@
         <div id="lixeiraOrganico"></div>
         <div id="lixeiraMetal"></div>
     </div>
+    <audio src="pontos.wav" id="somPontos" type="audio/wav"></audio>
+    <audio src="erro.wav" id="somErro" type="audio/wav"></audio>
+    <audio src="musicafinal.mp3" id="musicaFinal" type="audio/mpeg"></audio>
+    <dialog id="modalFinal">
+        <h2>Parabéns por fazer a coleta seletiva!</h2>
+        <p>A coleta seletiva facilita a reciclagem, evita a poluição do solo e das águas.</p>
+        <img src="confetes.gif" alt="confeteserror">
+        <button id="botFechar">X</button>
+      </dialog>
     <script src="script.js"></script>
 </body>
 </html>

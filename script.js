@@ -18,6 +18,8 @@ const latinha = document.querySelector('#latinha')
 const talher = document.querySelector('#talher')
 const panela = document.querySelector('#panela')
 
+const itens = document.querySelectorAll('.itens')
+
 const contagemPlastico = document.querySelector('#contagemPlastico')
 const contagemPapel = document.querySelector('#contagemPapel')
 const contagemVidro = document.querySelector('#contagemVidro')
@@ -29,6 +31,10 @@ const lixeiraPapel = document.querySelector('#lixeiraPapel')
 const lixeiraVidro = document.querySelector('#lixeiraVidro')
 const lixeiraOrganico = document.querySelector('#lixeiraOrganico')
 const lixeiraMetal = document.querySelector('#lixeiraMetal')
+
+const somPontos = document.querySelector('#somPontos')
+const somErro = document.querySelector('#somErro')
+const musicaFinal = document.querySelector('#musicaFinal')
 
 //Código para arrastar e soltar elementos de plástico
 sacola.addEventListener('dragstart', (event) => {
@@ -53,8 +59,13 @@ lixeiraPlastico.addEventListener('drop', (event) => {
         // Oculta o elemento arrastável após a soltura
         draggedElement.style.display = 'none';
         contarElementosFilhosPlastico()
+        tocaSomPontos()
+        acabouLixo()
     } else {
-        alert('Isso não é plástico, amiguinho!')
+        setTimeout(() => {
+            tocaSomErro()
+            alert('Isso não é plástico, amiguinho!')
+        }, 100);
     }
      
      });    
@@ -89,8 +100,13 @@ lixeiraPapel.addEventListener('drop', (event) => {
         // Oculta o elemento arrastável após a soltura
         draggedElement.style.display = 'none';
         contarElementosFilhosPapel()
+        tocaSomPontos()
+        acabouLixo()
     } else {
-        alert('Isso não é papel, amiguinho!')
+        setTimeout(() => {
+            tocaSomErro()
+            alert('Isso não é papel, amiguinho!')
+        }, 100);
     }
      
      });
@@ -124,8 +140,13 @@ lixeiraVidro.addEventListener('drop', (event) => {
         // Oculta o elemento arrastável após a soltura
         draggedElement.style.display = 'none';
         contarElementosFilhosVidro()
+        tocaSomPontos()
+        acabouLixo()
     } else {
-        alert('Isso não é vidro, amiguinho!')
+        tocaSomErro()
+        setTimeout(() => {
+           alert('Isso não é vidro, amiguinho!')
+        }, 100);
     }
      
      });
@@ -158,8 +179,13 @@ lixeiraOrganico.addEventListener('drop', (event) => {
         // Oculta o elemento arrastável após a soltura
         draggedElement.style.display = 'none';
         contarElementosFilhosOrganico()
+        tocaSomPontos()
+        acabouLixo()
     } else {
-        alert('Isso não é orgânico, amiguinho!')
+        tocaSomErro()
+        setTimeout(() => {
+            alert('Isso não é orgânico, amiguinho!')
+        }, 100);
     }
      
      });    
@@ -192,8 +218,13 @@ lixeiraMetal.addEventListener('drop', (event) => {
         // Oculta o elemento arrastável após a soltura
         draggedElement.style.display = 'none';
         contarElementosFilhosMetal()
+        tocaSomPontos()
+        acabouLixo()
     } else {
-        alert('Isso não é metal, amiguinho!')
+        tocaSomErro()
+        setTimeout(() => {
+            alert('Isso não é metal, amiguinho!')   
+        }, 100); 
     }
      
      });    
@@ -203,3 +234,58 @@ function contarElementosFilhosMetal() {
    contagemMetal.textContent = elementos
   }
 
+function tocaSomPontos() {
+    somPontos.play()
+}
+function tocaSomErro() {
+    somErro.play()
+}
+
+//código para o modal final
+ let modalFinal = document.querySelector('#modalFinal');
+ let botFechar = document.querySelector('#botFechar');
+
+ // função para abrir o modal
+  function abrirModalFinal() {
+    tocaMusicaFinal()
+   modalFinal.showModal();
+   
+ }
+
+ // adiciona um listener de evento ao botão de fechar para fechar o modal
+ botFechar.addEventListener('click', function() {
+   modalFinal.close();
+   paraMusicaFinal()
+   reiniciaContagem()
+   reapareceItens()
+
+ });
+
+ // verifica se todos os itens foram colocados nas lixeiras
+ function acabouLixo() {
+    let materialRecolhido = parseInt(contagemPlastico.textContent) + parseInt(contagemPapel.textContent) + parseInt(contagemVidro.textContent) + parseInt(contagemOrganico.textContent) + parseInt(contagemMetal.textContent)
+    if ( materialRecolhido == 15) {
+        abrirModalFinal()
+    }  
+ }
+function tocaMusicaFinal() {
+    musicaFinal.play()
+}
+function paraMusicaFinal() {
+    musicaFinal.pause()
+}
+
+function reiniciaContagem() {
+    contagemPlastico.textContent = ''
+    contagemPapel.textContent = ''
+    contagemVidro.textContent = ''
+    contagemOrganico.textContent = ''
+    contagemMetal.textContent = ''
+}
+
+function reapareceItens() {
+    itens.forEach(elemento => {
+        document.body.appendChild(elemento); // Move o elemento de volta para o elemento pai original
+        elemento.style.display = 'block'; // Exibe novamente o elemento
+    })
+}

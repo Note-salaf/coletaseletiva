@@ -33,9 +33,9 @@ body {
 }
 #caixa {
   position: absolute;
-  top: 300px;
+  top: 100%; /*300px;*/
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -100%);
   display: flex;
   justify-content: center;
 }
@@ -73,13 +73,14 @@ body {
 #contagemPlastico {
     position: absolute;
     left: 50%;
-    top: 495px;
-    transform: translateX(-480%);
+    top: 100%; /*495px;*/
+    transform: translate(-480%,-791%);
     width: 50px;
     height: 20px;
     z-index: 1;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 /*Itens de papel*/
 #jornal {
@@ -115,13 +116,14 @@ body {
 #contagemPapel {
     position: absolute;
     left: 50%;
-    top: 495px;
-    transform: translateX(-258%);
+    top: 100%; /*495px;*/
+    transform: translate(-258%,-791%);
     width: 50px;
     height: 20px;
     z-index: 1;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 /* itens de vidro */
 #espelho {
@@ -157,13 +159,14 @@ body {
 #contagemVidro {
     position: absolute;
     left: 50%;
-    top: 495px;
-    transform: translateX(-50%);
+    top: 100%; /*495px;*/
+    transform: translate(-50%,-791%);
     width: 50px;
     height: 20px;
     z-index: 1;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 /* itens orgânicos */
 #maca {
@@ -199,13 +202,14 @@ body {
 #contagemOrganico {
     position: absolute;
     left: 50%;
-    top: 495px;
-    transform: translateX(168%);
+    top: 100%; /*495px;*/
+    transform: translate(168%,-791%);
     width: 50px;
     height: 20px;
     z-index: 1;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 /* itens de metal */
 #latinha {
@@ -241,11 +245,46 @@ body {
 #contagemMetal {
     position: absolute;
     left: 50%;
-    top: 495px;
-    transform: translateX(398%);
+    top: 100%; /*495px;*/
+    transform: translate(398%,-791%);
     width: 50px;
     height: 20px;
     z-index: 1;
     color: white;
     font-size: 20px;
+    text-align: center;
+}
+/* estilo para o modalFinal */
+/* estilo para a caixa de diálogo */
+dialog {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 15px 15px 40px black;
+    overflow: hidden;
+  }
+
+ /* estilo botFechar do modalFinal */
+#botFechar {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+
+}
+dialog p {
+    text-indent: 2em;
+}
+dialog h2 {
+    text-align: center;
+}
+img {
+    position: absolute;
+    left: 20px;
+    top: 33px;
+    width: 250px;
+    height: auto;
 }

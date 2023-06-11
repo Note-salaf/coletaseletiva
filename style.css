@@ -1,290 +1,600 @@
-body {
-    background-color: gray;
-}
-#lixeiraPlastico {
-    width: 108px;
-    height: 350px;
-    background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -49px -26px;
-    display: inline-block;
-}
-#lixeiraPapel {
-    width: 108px;
-    height: 350px;
-    background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -158px -26px;
-    display: inline-block;
-}
-#lixeiraVidro {
-    width: 108px;
-    height: 350px;
-    background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -270px -26px;
-    display: inline-block;
-}
-#lixeiraOrganico {
-    width: 108px;
-    height: 350px;
-    background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -380px -26px;
-    display: inline-block;
-}
-#lixeiraMetal {
-    width: 108px;
-    height: 350px;
-    background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -485px -26px;
-    display: inline-block;
-}
-#caixa {
-  position: absolute;
-  top: 100%; /*300px;*/
-  left: 50%;
-  transform: translate(-50%, -100%);
-  display: flex;
-  justify-content: center;
-}
-/*objetos de plástico*/
-#sacola {
-    width: 245px;
-    height: 215px;
-    background: url(objetosdeplastico-removebg.png) 0 0;
-    scale: 50%;
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    /*display: inline-block;*/
-}
-#copo {
-    width: 143px;
-    height: 181px;
-    background: url(objetosdeplastico-removebg.png) -140px -225px;
-    scale: 50%;
-    position: absolute;
-    top: -30px;
-    left: 100px;
-    /*display: inline-block;*/
-}
-#garrafaPlastico {
-    width: 131px;
-    height: 250px;
-    background: url(objetosdeplastico-removebg.png) -5px -212px;
-    scale: 50%;
-    position: absolute;
-    top: -80px;
-    left: 180px;
-    /*display: inline-block;*/
-}
-#contagemPlastico {
-    position: absolute;
-    left: 50%;
-    top: 100%; /*495px;*/
-    transform: translate(-480%,-791%);
-    width: 50px;
-    height: 20px;
-    z-index: 1;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-/*Itens de papel*/
-#jornal {
-    width: 97px;
-    height: 129px;
-    background: url(itenspapel-removebg-preview.png) -355px -197px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 280px;
-    /*display: inline-block;*/
-}
-#caixaPapelao {
-    width: 205px;
-    height: 112px;
-    background: url(itenspapel-removebg-preview.png) -254px -338px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 320px;
-    /*display: inline-block;*/
-}
-#sacolaPapel {
-    width: 102px;
-    height: 132px;
-    background: url(itenspapel-removebg-preview.png) -144px -255px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 450px;
-    /*display: inline-block;*/
-}
-#contagemPapel {
-    position: absolute;
-    left: 50%;
-    top: 100%; /*495px;*/
-    transform: translate(-258%,-791%);
-    width: 50px;
-    height: 20px;
-    z-index: 1;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-/* itens de vidro */
-#espelho {
-    width: 109px;
-    height: 124px;
-    background: url(itensvidro-removebg-preview.png) -13px -7px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 500px;
-    /*display: inline-block;*/
-}
-#garrafaVidro {
-    width: 58px;
-    height: 151px;
-    background: url(itensvidro-removebg-preview.png) -283px -100px;
-    scale: 50%;
-    position: absolute;
-    top: -20px;
-    left: 600px;
-    /*display: inline-block;*/
-}
-#taca {
-    width: 61px;
-    height: 94px;
-    background: url(itensvidro-removebg-preview.png) -337px -133px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 650px;
-    /*display: inline-block;*/
-}
-#contagemVidro {
-    position: absolute;
-    left: 50%;
-    top: 100%; /*495px;*/
-    transform: translate(-50%,-791%);
-    width: 50px;
-    height: 20px;
-    z-index: 1;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-/* itens orgânicos */
-#maca {
-    width: 90px;
-    height: 108px;
-    background: url(itensorganicos-removebg-preview.png) -263px -46px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 720px;
-    /*display: inline-block;*/
-}
-#banana {
-    width: 214px;
-    height: 135px;
-    background: url(itensorganicos-removebg-preview.png) -28px -341px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 750px;
-    /*display: inline-block;*/
-}
-#peixe {
-    width: 73px;
-    height: 237px;
-    background: url(itensorganicos-removebg-preview.png) -388px -227px;
-    scale: 50%;
-    position: absolute;
-    top: -50px;
-    left: 950px;
-    /*display: inline-block;*/
-}
-#contagemOrganico {
-    position: absolute;
-    left: 50%;
-    top: 100%; /*495px;*/
-    transform: translate(168%,-791%);
-    width: 50px;
-    height: 20px;
-    z-index: 1;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-/* itens de metal */
-#latinha {
-    width: 73px;
-    height: 117px;
-    background: url(itensmetalicos.png) -272px -58px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 1000px;
-    /*display: inline-block;*/
-}
-#talher {
-    width: 68px;
-    height: 109px;
-    background: url(itensmetalicos.png) -456px -292px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 1080px;
-    /*display: inline-block;*/
-}
-#panela {
-    width: 187px;
-    height: 104px;
-    background: url(itensmetalicos.png) -350px -177px;
-    scale: 50%;
-    position: absolute;
-    top: 0;
-    left: 1110px;
-    /*display: inline-block;*/
-}
-#contagemMetal {
-    position: absolute;
-    left: 50%;
-    top: 100%; /*495px;*/
-    transform: translate(398%,-791%);
-    width: 50px;
-    height: 20px;
-    z-index: 1;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-/* estilo para o modalFinal */
-/* estilo para a caixa de diálogo */
-dialog {
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 15px 15px 40px black;
-    overflow: hidden;
+/* Estilos para telas pequenas (até 600 pixels de largura) */
+@media (max-width: 600px) {
+    /* Adicione os estilos apropriados para telas pequenas aqui */
+    body {
+        background-color: gray;
+    }
+    #lixeiraPlastico {
+        position: absolute;
+        top: 100vh;
+        left: -5vw;
+        scale: 50%;
+        transform: translateY(-150%);
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -49px -26px;
+    }
+    #lixeiraPapel {
+        position: absolute;
+        top: 100vh;
+        left: 15vw;
+        scale: 50%;
+        transform: translateY(-150%);
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -158px -26px;
+    }
+    #lixeiraVidro {
+        position: absolute;
+        top: 100vh;
+        left: 35vw;
+        scale: 50%;
+        transform: translateY(-150%);
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -270px -26px;
+    }
+    #lixeiraOrganico {
+        position: absolute;
+        top: 100vh;
+        left: 55vw;
+        scale: 50%;
+        transform: translateY(-150%);
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -380px -26px;
+    }
+    #lixeiraMetal {
+        position: absolute;
+        top: 100vh;
+        left: 75vw;
+        scale: 50%;
+        transform: translateY(-150%);
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -485px -26px;
+    }
+   
+    /*objetos de plástico*/
+    #sacola {
+        width: 245px;
+        height: 215px;
+        background: url(objetosdeplastico-removebg.png) 0 0;
+        scale: 30%;
+        position: absolute;
+        top: -50px;
+        left: -20vw;
+    }
+    #copo {
+        width: 143px;
+        height: 181px;
+        background: url(objetosdeplastico-removebg.png) -140px -225px;
+        scale: 30%;
+        position: absolute;
+        top: -30px;
+        left: 10vw;
+    }
+    #garrafaPlastico {
+        width: 131px;
+        height: 250px;
+        background: url(objetosdeplastico-removebg.png) -5px -212px;
+        scale: 30%;
+        position: absolute;
+        top: -80px;
+        left: 25vw;
+        /*display: inline-block;*/
+    }
+    #contagemPlastico {
+        position: absolute;
+        top: 88vh;
+        left: 2vw;
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    /*Itens de papel*/
+    #jornal {
+        width: 97px;
+        height: 129px;
+        background: url(itenspapel-removebg-preview.png) -355px -197px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 45vw;
+        /*display: inline-block;*/
+    }
+    #caixaPapelao {
+        width: 205px;
+        height: 112px;
+        background: url(itenspapel-removebg-preview.png) -254px -338px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 51vw;
+        /*display: inline-block;*/
+    }
+    #sacolaPapel {
+        width: 102px;
+        height: 132px;
+        background: url(itenspapel-removebg-preview.png) -144px -255px;
+        scale: 50%;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+    }
+    #contagemPapel {
+        position: absolute;
+        top: 88vh;
+        left: 22vw;
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    /* itens de vidro */
+    #espelho {
+        width: 109px;
+        height: 124px;
+        background: url(itensvidro-removebg-preview.png) -13px -7px;
+        scale: 50%;
+        position: absolute;
+        top: 15vh;
+        left: 18vw;
+        /*display: inline-block;*/
+    }
+    #garrafaVidro {
+        width: 58px;
+        height: 151px;
+        background: url(itensvidro-removebg-preview.png) -283px -100px;
+        scale: 50%;
+        position: absolute;
+        top: 13vh;
+        left: 43vw;
+        /*display: inline-block;*/
+    }
+    #taca {
+        width: 61px;
+        height: 94px;
+        background: url(itensvidro-removebg-preview.png) -337px -133px;
+        scale: 50%;
+        position: absolute;
+        top: 18vh;
+        left: 55vw;
+        /*display: inline-block;*/
+    }
+    #contagemVidro {
+        position: absolute;
+        top: 88vh;
+        left: 42vw;
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    /* itens orgânicos */
+    #maca {
+        width: 90px;
+        height: 108px;
+        background: url(itensorganicos-removebg-preview.png) -263px -46px;
+        scale: 50%;
+        position: absolute;
+        top: 15vh;
+        left: 70vw;
+        /*display: inline-block;*/
+    }
+    #banana {
+        width: 214px;
+        height: 135px;
+        background: url(itensorganicos-removebg-preview.png) -28px -341px;
+        scale: 30%;
+        position: absolute;
+        top: 30vh;
+        left: -13vw;
+        /*display: inline-block;*/
+    }
+    #peixe {
+        width: 73px;
+        height: 237px;
+        background: url(itensorganicos-removebg-preview.png) -388px -227px;
+        scale: 50%;
+        position: absolute;
+        top: 23vh;
+        left: 20vw;
+        /*display: inline-block;*/
+    }
+    #contagemOrganico {
+        position: absolute;
+        top: 88vh;
+        left: 62vw;
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    /* itens de metal */
+    #latinha {
+        width: 73px;
+        height: 117px;
+        background: url(itensmetalicos.png) -272px -58px;
+        scale: 50%;
+        position: absolute;
+        top: 30vh;
+        left: 33vw;
+        /*display: inline-block;*/
+    }
+    #talher {
+        width: 68px;
+        height: 109px;
+        background: url(itensmetalicos.png) -456px -292px;
+        scale: 50%;
+        position: absolute;
+        top: 30vh;
+        left: 50vw;
+        /*display: inline-block;*/
+    }
+    #panela {
+        width: 187px;
+        height: 104px;
+        background: url(itensmetalicos.png) -350px -177px;
+        scale: 30%;
+        position: absolute;
+        top: 30vh;
+        left: 50vw;
+        /*display: inline-block;*/
+    }
+    #contagemMetal {
+        position: absolute;
+        top: 88vh;
+        left: 83vw;
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    /* estilo para o modalFinal */
+    /* estilo para a caixa de diálogo */
+    dialog {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 15px 15px 40px black;
+        overflow: hidden;
+      }
+    
+     /* estilo botFechar do modalFinal */
+    #botFechar {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+    
+    }
+    dialog p {
+        text-indent: 2em;
+    }
+    dialog h2 {
+        text-align: center;
+    }
+    img {
+        position: absolute;
+        left: 20px;
+        top: 33px;
+        width: 250px;
+        height: auto;
+    }
   }
-
- /* estilo botFechar do modalFinal */
-#botFechar {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transform: translateX(-100%);
-
-}
-dialog p {
-    text-indent: 2em;
-}
-dialog h2 {
-    text-align: center;
-}
-img {
-    position: absolute;
-    left: 20px;
-    top: 33px;
-    width: 250px;
-    height: auto;
-}
+  
+  /* Estilos para telas médias (de 601px a 900px de largura) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    /* Adicione os estilos apropriados para telas médias aqui */
+  }
+  
+  /* Estilos para telas grandes (maiores que 900 pixels de largura) */
+  @media (min-width: 901px) {
+    /* Adicione os estilos apropriados para telas grandes aqui */
+    body {
+        background-color: gray;
+    }
+    #lixeiraPlastico {
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -49px -26px;
+        display: inline-block;
+    }
+    #lixeiraPapel {
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -158px -26px;
+        display: inline-block;
+    }
+    #lixeiraVidro {
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -270px -26px;
+        display: inline-block;
+    }
+    #lixeiraOrganico {
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -380px -26px;
+        display: inline-block;
+    }
+    #lixeiraMetal {
+        width: 108px;
+        height: 350px;
+        background: url(lixeiras-de-coleta-seletiva-larplasticos-1-removebg-preview.png) -485px -26px;
+        display: inline-block;
+    }
+    #caixa {
+      position: absolute;
+      top: 100%; /*300px;*/
+      left: 50%;
+      transform: translate(-50%, -100%);
+      display: flex;
+      justify-content: center;
+    }
+    /*objetos de plástico*/
+    #sacola {
+        width: 245px;
+        height: 215px;
+        background: url(objetosdeplastico-removebg.png) 0 0;
+        scale: 50%;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        /*display: inline-block;*/
+    }
+    #copo {
+        width: 143px;
+        height: 181px;
+        background: url(objetosdeplastico-removebg.png) -140px -225px;
+        scale: 50%;
+        position: absolute;
+        top: -30px;
+        left: 100px;
+        /*display: inline-block;*/
+    }
+    #garrafaPlastico {
+        width: 131px;
+        height: 250px;
+        background: url(objetosdeplastico-removebg.png) -5px -212px;
+        scale: 50%;
+        position: absolute;
+        top: -80px;
+        left: 180px;
+        /*display: inline-block;*/
+    }
+    #contagemPlastico {
+        position: absolute;
+        left: 50%;
+        top: 100%; /*495px;*/
+        transform: translate(-480%,-791%);
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*Itens de papel*/
+    #jornal {
+        width: 97px;
+        height: 129px;
+        background: url(itenspapel-removebg-preview.png) -355px -197px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 280px;
+        /*display: inline-block;*/
+    }
+    #caixaPapelao {
+        width: 205px;
+        height: 112px;
+        background: url(itenspapel-removebg-preview.png) -254px -338px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 320px;
+        /*display: inline-block;*/
+    }
+    #sacolaPapel {
+        width: 102px;
+        height: 132px;
+        background: url(itenspapel-removebg-preview.png) -144px -255px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 450px;
+        /*display: inline-block;*/
+    }
+    #contagemPapel {
+        position: absolute;
+        left: 50%;
+        top: 100%; /*495px;*/
+        transform: translate(-258%,-791%);
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    /* itens de vidro */
+    #espelho {
+        width: 109px;
+        height: 124px;
+        background: url(itensvidro-removebg-preview.png) -13px -7px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 500px;
+        /*display: inline-block;*/
+    }
+    #garrafaVidro {
+        width: 58px;
+        height: 151px;
+        background: url(itensvidro-removebg-preview.png) -283px -100px;
+        scale: 50%;
+        position: absolute;
+        top: -20px;
+        left: 600px;
+        /*display: inline-block;*/
+    }
+    #taca {
+        width: 61px;
+        height: 94px;
+        background: url(itensvidro-removebg-preview.png) -337px -133px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 650px;
+        /*display: inline-block;*/
+    }
+    #contagemVidro {
+        position: absolute;
+        left: 50%;
+        top: 100%; /*495px;*/
+        transform: translate(-50%,-791%);
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    /* itens orgânicos */
+    #maca {
+        width: 90px;
+        height: 108px;
+        background: url(itensorganicos-removebg-preview.png) -263px -46px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 720px;
+        /*display: inline-block;*/
+    }
+    #banana {
+        width: 214px;
+        height: 135px;
+        background: url(itensorganicos-removebg-preview.png) -28px -341px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 750px;
+        /*display: inline-block;*/
+    }
+    #peixe {
+        width: 73px;
+        height: 237px;
+        background: url(itensorganicos-removebg-preview.png) -388px -227px;
+        scale: 50%;
+        position: absolute;
+        top: -50px;
+        left: 950px;
+        /*display: inline-block;*/
+    }
+    #contagemOrganico {
+        position: absolute;
+        left: 50%;
+        top: 100%; /*495px;*/
+        transform: translate(168%,-791%);
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    /* itens de metal */
+    #latinha {
+        width: 73px;
+        height: 117px;
+        background: url(itensmetalicos.png) -272px -58px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 1000px;
+        /*display: inline-block;*/
+    }
+    #talher {
+        width: 68px;
+        height: 109px;
+        background: url(itensmetalicos.png) -456px -292px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 1080px;
+        /*display: inline-block;*/
+    }
+    #panela {
+        width: 187px;
+        height: 104px;
+        background: url(itensmetalicos.png) -350px -177px;
+        scale: 50%;
+        position: absolute;
+        top: 0;
+        left: 1110px;
+        /*display: inline-block;*/
+    }
+    #contagemMetal {
+        position: absolute;
+        left: 50%;
+        top: 100%; /*495px;*/
+        transform: translate(398%,-791%);
+        width: 50px;
+        height: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    /* estilo para o modalFinal */
+    /* estilo para a caixa de diálogo */
+    dialog {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 15px 15px 40px black;
+        overflow: hidden;
+      }
+    
+     /* estilo botFechar do modalFinal */
+    #botFechar {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+    
+    }
+    dialog p {
+        text-indent: 2em;
+    }
+    dialog h2 {
+        text-align: center;
+    }
+    img {
+        position: absolute;
+        left: 20px;
+        top: 33px;
+        width: 250px;
+        height: auto;
+    }
+  }
+  
